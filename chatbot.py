@@ -11,7 +11,7 @@ index = faiss.read_index("faiss_index/index.faiss")
 chunks = pickle.load(open("faiss_index/chunks.pkl", "rb"))
 
 # Initialize LLM client
-client = Groq()
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def ask_bot(query):
     # Step 1: Convert question to vector
