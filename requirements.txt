@@ -6,3 +6,4 @@ pypdf
 tiktoken
 numpy
 sentence-transformers
+groq
